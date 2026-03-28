@@ -9,7 +9,7 @@ let tasks;
 if (savedData) {
   tasks = JSON.parse(savedData) 
 } else {
-  tasks = {} 
+  tasks = [] 
 };
 
 function saveTasks() {
