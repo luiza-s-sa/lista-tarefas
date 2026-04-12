@@ -24,7 +24,7 @@ function displayTasks() {
     const li = document.createElement('li');
     const p = document.createElement('p');
     p.setAttribute('class', 'task-text')
-    p.innerHTML = `<span>${task.text}</span> • ${task.data} às ${task.hora}`;
+    p.innerHTML = `<span>${task.text}</span> • ${task.data}`;
     if (task.completed) {
       p.classList.add('task-completed');
     }
@@ -108,7 +108,6 @@ function addNewTask(event) {
   const newTask = {
     text: inputTask.value,
     data: new Date().toLocaleDateString('pt-BR'),
-    hora: new Date().toLocaleTimeString('pt-BR', {hour: '2-digit', minute: '2-digit'}),
     completed: false
   };
   if (newTask.text.trim() !== '') { 
