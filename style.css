@@ -172,7 +172,7 @@ li {
 /* RESPONSIVO */
 @media (max-width: 768px) {
   .add-tasks {
-    padding: 30px 5px;
+    padding: 30px 10px;
   }
   h1 {
     font-size: 32px;
@@ -184,7 +184,7 @@ li {
     font-size: 14px;
   }
   .tasks-container {
-    padding: 30px 5px;
+    padding: 30px 10px;
   }
   .task-list {
     margin-top: 20px;
